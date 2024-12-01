@@ -1,0 +1,146 @@
+{
+  "users": [
+    {
+      "username": "testuser",
+      "fullname": "Test User",
+      "email": "test1.user@yopmail.com",
+      "status": "busy",
+      "profile_image": "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341",
+      "password": "123456",
+      "posts": [],
+      "connections": [],
+      "id": "1"
+    },
+    {
+      "id": "8b61",
+      "username": "Tushar pal",
+      "password": "tushar@pal",
+      "email": "tushar.pal@yopmail.com",
+      "fullname": "123456",
+      "status": "Busy",
+      "profile_image": "https://via.placeholder.com/150"
+    },
+    {
+      "username": "newuser",
+      "fullname": "New User2",
+      "email": "newuser@yopmail.com",
+      "status": "busy",
+      "profile_image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      "password": "123456",
+      "posts": [],
+      "connections": [],
+      "id": "137d"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "content": "This is my first post!",
+      "createdAt": "2024-11-27T12:00:00Z",
+      "comments": []
+    },
+    {
+      "id": "f943",
+      "user_id": 1,
+      "content": "Success is not final, failure is not fatal: It’s the courage to continue that counts. Keep going, you're closer than you think!",
+      "createdAt": "2024-12-01T18:12:25.091Z",
+      "comments": []
+    },
+    {
+      "id": "b5c8",
+      "user_id": 1,
+      "content": "Start your day with a plan. Prioritize tasks, set small goals, and celebrate each win. Progress is built one step at a time.",
+      "createdAt": "2024-12-01T18:12:53.289Z",
+      "comments": []
+    },
+    {
+      "id": "4d05",
+      "user_id": 1,
+      "content": "Quick tip: Keep your phone charged and organized! Decluttering apps & files can speed up your device and boost productivity.",
+      "createdAt": "2024-12-01T18:13:06.812Z",
+      "comments": []
+    },
+    {
+      "id": "4cac",
+      "user_id": 1,
+      "content": "Take a moment for yourself today. A quick break, deep breaths, or a cup of tea can refresh your mind and improve focus.",
+      "createdAt": "2024-12-01T18:13:35.399Z",
+      "comments": []
+    },
+    {
+      "id": "ce1d",
+      "user_id": 1,
+      "content": "Did you know? The shortest war in history lasted only 38 to 45 minutes, between Britain and Zanzibar in 1896!",
+      "createdAt": "2024-12-01T18:13:53.612Z",
+      "comments": []
+    },
+    {
+      "id": "ed75",
+      "user_id": "1",
+      "content": "Embrace the power of new beginnings! Each day is a chance to start fresh and make progress towards your goals. Don't let setbacks hold you back—learn from them, grow, and keep moving forward. The best time to start is now.",
+      "createdAt": "2024-12-01T21:31:12.760Z",
+      "comments": []
+    },
+    {
+      "id": "adff",
+      "user_id": "1",
+      "content": "Self-care isn’t just a trend, it's a necessity. Take time for yourself today, even if it's just for a few minutes. Whether it's a walk, reading, or simply relaxing, your mind and body will thank you for it.",
+      "createdAt": "2024-12-01T21:34:48.803Z",
+      "comments": []
+    },
+    {
+      "id": "1bba",
+      "user_id": "1",
+      "content": "Gratitude turns what we have into enough. When we focus on the positives, life feels a little brighter. Start your day by thinking of three things you're thankful for and watch your mindset transform.",
+      "createdAt": "2024-12-01T21:36:42.114Z",
+      "comments": []
+    },
+    {
+      "id": "47aa",
+      "user_id": "1",
+      "content": "Change can be daunting, but it's also where growth happens. Embrace new challenges with an open heart and mind. You never know what you’re capable of until you push beyond your comfort zone",
+      "createdAt": "2024-12-01T21:38:01.441Z",
+      "comments": []
+    },
+    {
+      "id": "b2dd",
+      "user_id": "1",
+      "content": "Surround yourself with people who inspire you. Positive energy is contagious, and the right people can help you unlock your potential. Build relationships that lift you higher, not ones that bring you down.",
+      "createdAt": "2024-12-01T21:39:44.253Z",
+      "comments": []
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "post_id": 1,
+      "user_id": 2,
+      "content": "Great post!"
+    },
+    {
+      "id": "c009",
+      "post_id": 1,
+      "user_id": 1,
+      "content": "This is a new comment! hey hey!"
+    },
+    {
+      "id": "29b9",
+      "post_id": "ce1d",
+      "user_id": "1",
+      "content": "Hard to believe a war lasted less time than a movie!"
+    },
+    {
+      "id": "73ca",
+      "post_id": "4cac",
+      "user_id": "1",
+      "content": "Great!"
+    },
+    {
+      "id": "7a9d",
+      "post_id": "4cac",
+      "user_id": "1",
+      "content": "Good"
+    }
+  ]
+}

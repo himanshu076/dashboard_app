@@ -1,0 +1,4 @@
+export const queryKeys = {
+  GET_LIVE_MATCHES: "GET_LIVE_MATCHES",
+  GET_EXTRA_MATCHES: "GET_EXTRA_MATCHES"
+}
