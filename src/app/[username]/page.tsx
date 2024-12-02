@@ -5,7 +5,7 @@ import LeftPanel from '@/components/common/LeftPanel';
 import MiddlePanel from '@/components/common/MiddlePanel';
 import RightPanel from '@/components/common/RightPanel';
 import { Box, Button, Container, Typography } from '@mui/material';
-import { RootState } from '@/redux/store';
+import { RootState } from '@/lib/redux/store';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import api from '@/config/api.config';
 import { Post } from '@/components/types/post';
-import { login as setLogin } from '@/redux/slices/authSlice';
+import { login as setLogin } from '@/lib/redux/slices/authSlice';
 import { useDispatch } from 'react-redux';
+import Cookies from 'js-cookie';
 
 const useUpdateUser = () => {
   const dispatch = useDispatch();
@@ -46,7 +47,7 @@ const useUpdateUser = () => {
 
       if (response.ok) {
         dispatch(setLogin(data));
-        sessionStorage.setItem('user', JSON.stringify(data));
+        Cookies.set('user', JSON.stringify(data));
         setSuccess(true);
       } else {
         setError(data.message || 'Error updating user');

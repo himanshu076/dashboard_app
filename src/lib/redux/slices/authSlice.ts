@@ -1,5 +1,9 @@
+'use client';
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { User } from '@/components/types/user';
+import Cookies from 'js-cookie';
+
 
 interface AuthState {
   user: User | null;
@@ -7,9 +11,10 @@ interface AuthState {
   error: string | null;
 }
 
-// Load user data from sessionStorage
-const storedUser = typeof window !== 'undefined' ? sessionStorage.getItem('user') : null;
+
+const storedUser = Cookies.get('user');
 const parsedUser = storedUser ? JSON.parse(storedUser) : null;
+
 
 const initialState: AuthState = {
   user: parsedUser || null,
@@ -25,10 +30,6 @@ const authSlice = createSlice({
       state.user = action.payload;
       state.isAuthenticated = true;
       state.error = null; // Clear any previous errors
-
-      // if (typeof window !== 'undefined') {
-      //   sessionStorage.setItem('user', JSON.stringify(action.payload));
-      // }
     },
     logout: (state) => {
       state.user = null;
@@ -46,18 +47,8 @@ const authSlice = createSlice({
     clearError: (state) => {
       state.error = null; // Clear the error message
     },
-    hydrateUser: (state) => {
-      // Lazy load user from sessionStorage if running in the browser
-      if (typeof window !== 'undefined') {
-        const storedUser = sessionStorage.getItem('user');
-        if (storedUser) {
-          state.user = JSON.parse(storedUser);
-          state.isAuthenticated = true;
-        }
-      }
-    },
   },
 });
 
-export const { login, logout, updateStatus, setError, clearError, hydrateUser } = authSlice.actions;
+export const { login, logout, updateStatus, setError, clearError } = authSlice.actions;
 export default authSlice.reducer;

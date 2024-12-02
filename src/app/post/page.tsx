@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, CircularProgress, Box, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
-import { RootState } from '@/redux/store';
+import { RootState } from '@/lib/redux/store';
 import useCreatePost from '@/hooks/useCreatePost';
 
 const CreatePostPage = () => {

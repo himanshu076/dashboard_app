@@ -3,7 +3,7 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Provider } from "react-redux";
-import store from "../redux/store";
+import store from "../lib/redux/store";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";

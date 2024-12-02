@@ -13,8 +13,9 @@ import {
   CircularProgress,
 } from "@mui/material";
 import useLogin from '@/hooks/useLogin';
-import { RootState } from '@/redux/store';
-import { login as setLogin } from '@/redux/slices/authSlice';
+import { RootState } from '@/lib/redux/store';
+import { login as setLogin } from '@/lib/redux/slices/authSlice';
+import Cookies from 'js-cookie';
 
 
 const LoginPage = () => {
@@ -51,7 +52,8 @@ const LoginPage = () => {
 
     if (user) {
       const updatedUser = {...user, password};
-      sessionStorage.setItem('user', JSON.stringify(updatedUser));   // Store user data in sessionStorage
+      Cookies.set('user', JSON.stringify(updatedUser));
+
       dispatch(setLogin(user)); // Dispatch login action if successful
 
       // Redirect to the user's dashboard
