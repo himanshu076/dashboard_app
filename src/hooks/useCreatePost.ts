@@ -32,7 +32,7 @@ const useCreatePost = () => {
         setError(data.message || 'Error creating post');
       }
     } catch (error) {
-      setError('Internal Server Error');
+      setError(`Internal Server Error: ${error}`);
     } finally {
       setLoading(false);
     }

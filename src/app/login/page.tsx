@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 import {
   Box,
@@ -13,7 +13,6 @@ import {
   CircularProgress,
 } from "@mui/material";
 import useLogin from '@/hooks/useLogin';
-import { RootState } from '@/lib/redux/store';
 import { login as setLogin } from '@/lib/redux/slices/authSlice';
 import Cookies from 'js-cookie';
 
