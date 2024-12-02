@@ -34,7 +34,7 @@ const useSignUp = () => {
         setError(data.message || "Error creating user");
       }
     } catch (error) {
-      setError("Internal Server Error");
+      setError(`Internal Server Error: ${error}`);
     } finally {
       setLoading(false);
     }

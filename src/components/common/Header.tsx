@@ -1,7 +1,7 @@
 'use client';
 
 // src/components/common/Header.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import { Box, Button, Typography, AppBar, Toolbar, Container } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';

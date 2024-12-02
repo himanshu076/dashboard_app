@@ -1,11 +1,8 @@
 'use client';
 
-import { Box, Container, Grid, Paper, Typography } from "@mui/material";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { Container, Typography } from "@mui/material";
 
 const HomePage: React.FC = () => {
-  const dispatch = useDispatch();
 
   return (
     <Container>

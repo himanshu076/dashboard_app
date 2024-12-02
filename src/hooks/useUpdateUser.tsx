@@ -53,7 +53,7 @@ const useUpdateUser = () => {
         setError(data.message || 'Error updating user');
       }
     } catch (error) {
-      setError('Internal Server Error');
+      setError(`Internal Server Error: ${error}`);
     } finally {
       setLoading(false);
     }

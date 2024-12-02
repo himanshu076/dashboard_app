@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Avatar, Typography, Button } from '@mui/material';
-import { User } from '../types/user';
 import { LeftPanelProps } from '../types/leftPanel';
 import { useRouter } from 'next/navigation';
 

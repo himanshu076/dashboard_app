@@ -40,7 +40,7 @@ const useLogin = () => {
         return null;
       }
     } catch (error) {
-      setError("Internal Server Error");
+      setError(`Internal Server Error: ${error}`);
       return null;
     } finally {
       setLoading(false);

@@ -31,7 +31,7 @@ const useCreateComment = () => {
         setError(data.message || 'Error creating comment');
       }
     } catch (error) {
-      setError('Internal Server Error');
+      setError(`Internal Server Error: ${error}`);
     } finally {
       setLoading(false);
     }

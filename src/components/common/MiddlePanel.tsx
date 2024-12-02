@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Box, TextField, Button, Typography, CircularProgress, List, ListItem } from '@mui/material';
-import { Post, Comment } from '../types/post';
+import { Post } from '../types/post';
 import { MiddlePanelProps } from '../types/middlePanel';
 import useFetchUserPosts from '@/hooks/useFetchUserPosts';
 import useCreateComment from '@/hooks/useCreateComment';
 
 const MiddlePanel: React.FC<MiddlePanelProps> = ({ user }) => {
-  const { createComment, errorComment, success, loadingComment } = useCreateComment();
+  const { createComment, errorComment, loadingComment } = useCreateComment();
   const [search, setSearch] = useState<string>('');
   const [comments, setComments] = useState<{ [key: string]: string }>({});
   const [updatedPosts, setUpdatedPosts] = useState<Post[]>([]);

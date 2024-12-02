@@ -1,6 +1,6 @@
 // src/app/dashboard/components/RightPanel.tsx
 import React, { useState } from 'react';
-import { Box, TextField, List, ListItem, Avatar, Typography, Link } from '@mui/material';
+import { Box, TextField, List, ListItem, Avatar, Typography } from '@mui/material';
 import { User } from '../types/user';
 import { useRouter } from 'next/navigation';  // For routing to the profile pag
 
